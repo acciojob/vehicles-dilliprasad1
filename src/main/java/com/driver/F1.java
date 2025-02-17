@@ -1,10 +1,9 @@
 package com.driver;
 
-// F1 class extending Car
 public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
-        super(name, 4, 2, 6, isManual, "Formula1", 1);
+        super(name, 4, 2, 6, isManual, "Race", 1);
     }
 
     public void accelerate(int rate) {

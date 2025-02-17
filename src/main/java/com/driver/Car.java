@@ -1,6 +1,5 @@
 package com.driver;
 
-// Car class extending Vehicle
 public class Car extends Vehicle {
     private int wheels;
     private String type;
@@ -18,16 +17,7 @@ public class Car extends Vehicle {
         this.isManual = isManual;
         this.type = type;
         this.seats = seats;
-        this.currentGear = 1;
-    }
-
-    public void changeGear(int newGear) {
-        this.currentGear = newGear;
-        System.out.println("changeGear method called - The gear is changed to: " + currentGear);
-    }
-
-    public void changeSpeed(int newSpeed, int newDirection) {
-        move(newSpeed, newDirection);
+        this.currentGear = 1; // Default gear 1
     }
 
     // Getter methods
@@ -57,5 +47,14 @@ public class Car extends Vehicle {
 
     public int getSeats() {
         return seats;
+    }
+
+    public void changeGear(int newGear) {
+        this.currentGear = newGear;
+        System.out.println("changeGear method called - The gear is changed to: " + currentGear);
+    }
+
+    public void changeSpeed(int newSpeed, int newDirection) {
+        move(newSpeed, newDirection);
     }
 }

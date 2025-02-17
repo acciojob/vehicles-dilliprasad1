@@ -1,6 +1,5 @@
 package com.driver;
 
-// Vehicle class (Base class)
 public class Vehicle {
     private String name;
     private int currentSpeed;
@@ -10,6 +9,18 @@ public class Vehicle {
         this.name = name;
         this.currentSpeed = 0;
         this.currentDirection = 0;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
     }
 
     public void steer(int direction) {
@@ -26,18 +37,5 @@ public class Vehicle {
     public void stop() {
         this.currentSpeed = 0;
         System.out.println("stop method called - The vehicle is stopped");
-    }
-
-    // Getter methods
-    public String getName() {
-        return name;
-    }
-
-    public int getCurrentSpeed() {
-        return currentSpeed;
-    }
-
-    public int getCurrentDirection() {
-        return currentDirection;
     }
 }
