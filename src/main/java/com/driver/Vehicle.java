@@ -10,6 +10,7 @@ public class Vehicle {
         this.name = name;
         this.currentSpeed = 0;
         this.currentDirection = 0;
+
     }
 
     public void steer(int direction) {
